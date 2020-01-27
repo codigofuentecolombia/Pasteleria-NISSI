@@ -1,0 +1,39 @@
+[19-Jan-2020 11:11:58 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home4/divideo/public_html/gestion/login.php:1) in /home4/divideo/public_html/gestion/login.php on line 6
+[19-Jan-2020 12:01:29 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home4/divideo/public_html/gestion/login.php:1) in /home4/divideo/public_html/gestion/login.php on line 8
+[19-Jan-2020 12:01:29 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/divideo/public_html/gestion/login.php:1) in /home4/divideo/public_html/gestion/login.php on line 34
+[19-Jan-2020 12:04:09 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home4/divideo/public_html/gestion/index.php:1) in /home4/divideo/public_html/gestion/index.php on line 8
+[19-Jan-2020 12:04:14 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home4/divideo/public_html/gestion/index.php:1) in /home4/divideo/public_html/gestion/index.php on line 8
+[19-Jan-2020 12:04:14 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/divideo/public_html/gestion/index.php:1) in /home4/divideo/public_html/gestion/index.php on line 34
+[19-Jan-2020 12:09:50 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home4/divideo/public_html/gestion/index.php:1) in /home4/divideo/public_html/gestion/index.php on line 6
+[21-Jan-2020 10:04:20 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home4/divideo/public_html/gestion/con_inventarios.php:60
+Stack trace:
+#0 {main}
+  thrown in /home4/divideo/public_html/gestion/con_inventarios.php on line 60
+[21-Jan-2020 10:04:28 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home4/divideo/public_html/gestion/con_inventarios.php:60
+Stack trace:
+#0 {main}
+  thrown in /home4/divideo/public_html/gestion/con_inventarios.php on line 60
+[21-Jan-2020 10:09:49 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on null in /home4/divideo/public_html/gestion/con_inventarios.php:60
+Stack trace:
+#0 {main}
+  thrown in /home4/divideo/public_html/gestion/con_inventarios.php on line 60
+[21-Jan-2020 10:10:58 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on null in /home4/divideo/public_html/gestion/con_inventarios.php:60
+Stack trace:
+#0 {main}
+  thrown in /home4/divideo/public_html/gestion/con_inventarios.php on line 60
+[21-Jan-2020 10:28:48 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on null in /home4/divideo/public_html/gestion/con_inventarios.php:60
+Stack trace:
+#0 {main}
+  thrown in /home4/divideo/public_html/gestion/con_inventarios.php on line 60
+[21-Jan-2020 15:48:50 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home4/divideo/public_html/gestion/con_inventarios.php:62
+Stack trace:
+#0 {main}
+  thrown in /home4/divideo/public_html/gestion/con_inventarios.php on line 62
+[24-Jan-2020 14:08:42 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home4/divideo/public_html/gestion/con_configuracion.php:81
+Stack trace:
+#0 {main}
+  thrown in /home4/divideo/public_html/gestion/con_configuracion.php on line 81
+[24-Jan-2020 19:55:00 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on boolean in /home4/divideo/public_html/gestion/con_inventarios.php:62
+Stack trace:
+#0 {main}
+  thrown in /home4/divideo/public_html/gestion/con_inventarios.php on line 62
