@@ -230,11 +230,11 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-lg-6">
                             <div class="form-group">
-                                <label for="id_producto">codigo</label>
+                                <label for="id_producto">Proveedor</label>
                                 <input type="text" id="id_producto" class="form-control" placeholder="id Item" name="id_producto" >
                             </div> 
                             <div class="form-group">
-                                <label for="nombre_producto">Nombre</label>
+                                <label for="nombre_producto">Factura</label>
                                 <input type="text" id="nombre_producto" class="form-control" placeholder="Nombre Item" name="nombre_producto" required>
                             </div>  
                             <!-- SELECT CONECTADO A LA BD -->
