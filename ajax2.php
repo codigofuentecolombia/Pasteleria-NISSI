@@ -1,7 +1,7 @@
 <?php
 define('DB_SERVER', 'localhost');
 define('DB_SERVER_USERNAME', 'divideo_nissi');
-define('DB_SERVER_PASSWORD', 'D05m4y4n1t05!');
+define('DB_SERVER_PASSWORD', '');
 define('DB_DATABASE', 'divideo_nissi');
 
 $connexion = new mysqli(DB_SERVER, DB_SERVER_USERNAME, DB_SERVER_PASSWORD, DB_DATABASE);
