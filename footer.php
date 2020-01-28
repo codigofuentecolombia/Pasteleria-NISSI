@@ -49,15 +49,15 @@
                       data: dataString,
                       success: function(data) {
                           //Escribimos las sugerencias que nos manda la consulta
-                          $('#suggestions').fadeIn(1000).html(data);
+                          $('#suggestions2').fadeIn(1000).html(data);
                           //Al hacer click en alguna de las sugerencias
-                          $('.suggest-element').on('click', function(){
+                          $('.suggest-element2').on('click', function(){
                                   //Obtenemos la id unica de la sugerencia pulsada
                                   var id = $(this).attr('id');
                                   //Editamos el valor del input con data de la sugerencia pulsada
                                   $('#codigo_producto').val($('#'+id).attr('data'));
                                   //Hacemos desaparecer el resto de sugerencias
-                                  $('#suggestions').fadeOut(1000);
+                                  $('#suggestions2').fadeOut(1000);
                                   swal('Has seleccionado el '+id+' ');
                                   return false;
                           });
