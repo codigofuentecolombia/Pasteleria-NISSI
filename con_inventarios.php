@@ -215,15 +215,15 @@
     </div></div> 
 
     <!-- Modal -->
-    <div class="modal fade text-left" id="iconEntrada" tabindex="-1" role="dialog" aria-labelledby="myModalLabel35" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header bg-danger white">
+     <div class="modal fade text-left" id="iconEntrada" tabindex="-1" role="dialog" aria-labelledby="myModalLabel35" aria-hidden="true">
+         <div class="modal-dialog modal-lg" role="document">
+             <div class="modal-content">
+                 <div class="modal-header bg-danger white">
                     <h3   class="modal-title" id="myModalLabel34" style="color:#fff;"  >Entrada de Inventario</h3 >
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                </div>
+                 </div>
                 <form method="post" action="controllers/crear_elemento.php">
                     <div class="modal-body">
                     
@@ -251,40 +251,23 @@
 							        <div id="suggestions2"></div> 
 
                         
-                            </div>
+                             </div>
+                           
                     <!-- Lista de Productos con Busqueda en la BD --> 
                     </div> <!-- Cierre de Fila --> 
   
   
-                    <div class="row">                            
-                        
-                          <!--  <div class="form-group">
-                                <label for="nombre_producto">Factura</label>
-                                <input type="text" id="nombre_producto" class="form-control" placeholder="numero de factura" name="nombre_producto" required>
-                            </div>  -->
-                        
-                            
+                <div class="row">                              
                             <!-- SELECT CONECTADO A LA BD -->
-                            <div class="form-group">
-                            <label for="producto">Producto</label>
-                            <select id="producto" name="producto" class="jui-select-default form-control" required>
-                                <option value="none" selected="" disabled="">producto</option>
-                                                            <?php   
-                                                                $unindades="SELECT * FROM unidades_medida WHERE reg_eli=0";
-                                                                $resultado1=$mysqli->query($unindades);
-                                                                while ($listadounidades=$resultado1->fetch_assoc()) {
-                                                            ?>                            
-                                <option value="<?php echo ($listadounidades["id_unidad"]);?>"><?php echo ($listadounidades["abrev_unidad"]);?></option>
-                                                                <?php } ?>
-                            </select> 
-                                                                                              
-                            </div>      
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                                        
+                </div>        
                             <!-- SELECT CONECTADO A LA BD -->                                                       
                           
-                    </div>    
-                    </div>        
+                     </div>    
+                            
 
-                    <div class="row">
+                    
                         <div class="col-md-6 col-sm-6 col-lg-6">   
                             <!-- SELECT CONECTADO A LA BD -->
                             <div class="form-group">                                            
@@ -299,51 +282,62 @@
                                     <option value="<?php echo ($listadocategorias["id_categoria"]);?>"><?php echo ($listadocategorias["nombre_categoria"]);?></option>
                                                                     <?php } ?>
                                 </select>
+                
                             </div> 
-                                     <div class="form-group">
-                                           <label  for="nombre_producto">Cantidad</label>
-                                           <input type="text" id="nombre_producto" class="form-control"  name="nombre_producto" required>
-                                      </div>
-                                        
+             
+                  <!-- caja 3-->
+             <div class="row">                              
+            
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                            <div class="form-group">
+                                <label  for="nombre_producto">Cantidad</label>
+                                <input type="text" id="nombre_producto" class="form-control"  name="nombre_producto" required>
+                            </div>
+                    </div> 
 
-                        </div>             
-                     </div>
-                        <!-- SELECT CONECTADO A LA BD -->                         
-                           
-                          
-                         <!-- SELECT CONECTADO A LA BD -->  
-                        <div class="row">
+
+                        
+                                                <!-- SELECT CONECTADO A LA BD --> 
                             <div class="col-sm-6 col-md-6 col-lg-6">
                                 <div class="form-group">
                                     <label for="nombre_producto">Responsable</label>
-                                           <select id="Unidad_medida" name="categoria" class="form-control" required>
-                                                  <option value="none" selected="" disabled="">Responsable</option>
+                                        <select id="Unidad_medida" name="categoria" class="form-control" required>
+                                                <option value="none" selected="" disabled="">Responsable</option>
                                                                 <?php   
                                                                     $categorias="SELECT * FROM categorias WHERE reg_eli=0";
                                                                     $resultado2=$mysqli->query($categorias);
                                                                     while ($listadocategorias=$resultado2->fetch_assoc()) {
                                                                 ?>                            
-                                                      <option value="<?php echo ($listadocategorias["id_categoria"]);?>"><?php echo ($listadocategorias["nombre_categoria"]);?></option>
+                                                    <option value="<?php echo ($listadocategorias["id_categoria"]);?>"><?php echo ($listadocategorias["nombre_categoria"]);?></option>
                                                                     <?php } ?>
-                                             </select>
-                                </div> 
+                                            </select>
+                             </div>
+                            </div>
+              </div>  <!-- final caja 3--> 
+
+                                    
+                     
+                        <!-- SELECT CONECTADO A LA BD -->                         
+                           
+                          
+                          
                                
                                  
                                  
                                    
-                            </div>
-                        </div>                      
-                    </div></div> 
+                           
+                         </div>                      
+                    
                     <div class="modal-footer" ><?php $usuario=$_SESSION['usuario']; ?>
                         <input type="text" value="crea_producto" style="display:none;" name="origen">
                         <input type="text" value="<?php echo $usuario; ?>" name="usuario" style="display:none;">
                         <input type="reset" class="btn btn-outline-secondary btn-lg" data-dismiss="modal" value="Cancelar">
                         <input type="submit" class="btn btn-primary btn-lg" value="Guardar">
-                    </div>
-                </form>
+                        <div>
+               </div>     
             </div>
         </div>
-    </div></div> 
+    
 
 
        <!-- Modal -->
