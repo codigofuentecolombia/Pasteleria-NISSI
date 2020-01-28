@@ -88,5 +88,24 @@
           }
         </style>
 
+<style type="text/css">
+          #suggestions2 {
+            box-shadow: 2px 2px 8px 0 rgba(0,0,0,.2);
+            height: auto;
+            position: absolute;
+            top: 62px;
+            z-index: 9;
+            width: 900px; 
+          }
+        
+          #suggestions2 .suggest-element2 {
+            background-color: #EEEEEE;
+            border-top: 1px solid #d6d4d4;
+            cursor: pointer;
+            padding: 12px;
+            width: 100%;
+            float: left;
+          }
+        </style>
 </head>
 <!-- END: Head-->

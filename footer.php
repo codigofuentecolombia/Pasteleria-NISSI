@@ -37,6 +37,36 @@
               });
           }); 
         </script>
+
+        <script type="text/javascript">
+          $(document).ready(function() {
+              $('#codigo_producto').on('blur', function() {
+                  var codigo_producto = $(this).val();		
+              var dataString = 'codigo_producto='+codigo_producto;
+            $.ajax({
+                      type: "POST",
+                      url: "ajax2.php",
+                      data: dataString,
+                      success: function(data) {
+                          //Escribimos las sugerencias que nos manda la consulta
+                          $('#suggestions').fadeIn(1000).html(data);
+                          //Al hacer click en alguna de las sugerencias
+                          $('.suggest-element').on('click', function(){
+                                  //Obtenemos la id unica de la sugerencia pulsada
+                                  var id = $(this).attr('id');
+                                  //Editamos el valor del input con data de la sugerencia pulsada
+                                  $('#codigo_producto').val($('#'+id).attr('data'));
+                                  //Hacemos desaparecer el resto de sugerencias
+                                  $('#suggestions').fadeOut(1000);
+                                  swal('Has seleccionado el '+id+' ');
+                                  return false;
+                          });
+                      }
+                  });
+              });
+          }); 
+        </script>
+
     <!-- BEGIN: Vendor JS-->
     <script src="app-assets/vendors/js/vendors.min.js"></script> 
     <!-- BEGIN Vendor JS-->
