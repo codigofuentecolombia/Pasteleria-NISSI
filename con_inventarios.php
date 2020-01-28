@@ -247,8 +247,8 @@
    
                             <div class="col-sm-6 col-md-6 col-lg-6">
                             <label for="codigo_producto">Producto</label>
-                                <input class="form-control"  type="number" name="codigo_producto" id="codigo_producto" placeholder="Codigo Producto." required>
-							        <div id="suggestions"></div> 
+                                <input class="form-control"  type="text" name="codigo_producto" id="codigo_producto" placeholder="Codigo Producto." required>
+							        <div id="suggestions2"></div> 
 
                         
                             </div>
