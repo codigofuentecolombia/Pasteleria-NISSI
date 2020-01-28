@@ -219,7 +219,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-danger white">
-                    <h3 class="modal-title" id="myModalLabel34" style="color:#fff;">Entrada de Inventario</h3>
+                    <h3   class="modal-title" id="myModalLabel34" style="color:#fff;"  >Entrada de Inventario</h3 >
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -230,18 +230,29 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-lg-6">
                             <div class="form-group">
-                                <label for="id_producto">Proveedor</label>
-                                <input type="text" id="id_producto" class="form-control" placeholder="id Item" name="id_producto" >
+                            <label for="proveedor">Proveedor</label>
+                                <select id="proveedor" name="proveedor" class="form-control" required>
+                                    <option value="none" selected="" disabled="">Proveedor</option>
+                                                                <?php   
+                                                                    $proveedores="SELECT * FROM proveedores WHERE reg_eli=0";
+                                                                    $resultado2=$mysqli->query($proveedores);
+                                                                    while ($listadoproveedores=$resultado2->fetch_assoc()) {
+                                                                ?>                            
+                                    <option value="<?php echo ($listadoproveedores["NIT"]);?>"><?php echo ($listadoproveedores["nombre_proveedor"]);?></option>
+                                                                    <?php } ?>
+                                </select>
+
+
                             </div> 
                             <div class="form-group">
                                 <label for="nombre_producto">Factura</label>
-                                <input type="text" id="nombre_producto" class="form-control" placeholder="Nombre Item" name="nombre_producto" required>
+                                <input type="text" id="nombre_producto" class="form-control" placeholder="numero de factura" name="nombre_producto" required>
                             </div>  
                             <!-- SELECT CONECTADO A LA BD -->
                             <div class="form-group">
-                            <label for="medida_producto">Unidad de Medida</label>
-                            <select id="medida_producto" name="medida_producto" class="jui-select-default form-control" required>
-                                <option value="none" selected="" disabled="">Unidad de Medida</option>
+                            <label for="items">Items</label>
+                            <select id="items" name="items" class="jui-select-default form-control" required>
+                                <option value="none" selected="" disabled="">Items</option>
                                                             <?php   
                                                                 $unindades="SELECT * FROM unidades_medida WHERE reg_eli=0";
                                                                 $resultado1=$mysqli->query($unindades);
@@ -249,7 +260,8 @@
                                                             ?>                            
                                 <option value="<?php echo ($listadounidades["id_unidad"]);?>"><?php echo ($listadounidades["abrev_unidad"]);?></option>
                                                                 <?php } ?>
-                            </select>                                                                   
+                            </select> 
+                                                                                              
                             </div>      
                             <!-- SELECT CONECTADO A LA BD -->                                                       
                         </div>
@@ -275,9 +287,9 @@
                         <div class="col-md-6 col-sm-6 col-lg-6">   
                             <!-- SELECT CONECTADO A LA BD -->
                             <div class="form-group">                                            
-                                <label for="categoria">Categoria</label>
-                                <select id="categoria" name="categoria" class="form-control" required>
-                                    <option value="none" selected="" disabled="">Categoria</option>
+                                <label for="Unidad_medida">unidad de medida</label>
+                                <select id="Unidad_medida" name="categoria" class="form-control" required>
+                                    <option value="none" selected="" disabled="">Unidad de medida</option>
                                                                 <?php   
                                                                     $categorias="SELECT * FROM categorias WHERE reg_eli=0";
                                                                     $resultado2=$mysqli->query($categorias);
@@ -287,35 +299,42 @@
                                                                     <?php } ?>
                                 </select>
                             </div> 
+                                     <div class="form-group">
+                                           <label align="center" for="nombre_producto">Cantidad</label>
+                                           <input type="text" id="nombre_producto" class="form-control"  name="nombre_producto" required>
+                                      </div>
+                                          <div class="form-group">
+                                              <label align="center" for="nombre_producto">Valor</label>
+                                              <input type="text" id="nombre_producto" class="form-control"  name="nombre_producto" required>
+                                          </div>
                         </div> 
                         <!-- SELECT CONECTADO A LA BD -->                         
-                        <div class="col-md-6 col-sm-6 col-lg-6">         
-                            <!-- SELECT CONECTADO A LA BD -->
-                            <div class="form-group">                                            
-                                <label for="proveedor">Proveedor</label>
-                                <select id="proveedor" name="proveedor" class="form-control" required>
-                                    <option value="none" selected="" disabled="">Proveedor</option>
-                                                                <?php   
-                                                                    $proveedores="SELECT * FROM proveedores WHERE reg_eli=0";
-                                                                    $resultado2=$mysqli->query($proveedores);
-                                                                    while ($listadoproveedores=$resultado2->fetch_assoc()) {
-                                                                ?>                            
-                                    <option value="<?php echo ($listadoproveedores["NIT"]);?>"><?php echo ($listadoproveedores["nombre_proveedor"]);?></option>
-                                                                    <?php } ?>
-                                </select>
-                            </div> 
+                           
                           
-                            <!-- SELECT CONECTADO A LA BD -->  
+                         <!-- SELECT CONECTADO A LA BD -->  
                         <div class="row">
-                            <div class="col-sm-6 col-md-6 col-lg-6">
+                            <div class="col-sm-12 col-md-12 col-lg-12">
                                 <div class="form-group">
-                                    <label for="elaborado">Fabricado por la Empresa?</label>
-                                    <input type="checkbox" class="switch" id="switch1" checked="checked" name="elaborado" />
-                                </div>  
+                                    <label for="nombre_producto">Responsable</label>
+                                           <select id="Unidad_medida" name="categoria" class="form-control" required>
+                                                  <option value="none" selected="" disabled="">Responsable</option>
+                                                                <?php   
+                                                                    $categorias="SELECT * FROM categorias WHERE reg_eli=0";
+                                                                    $resultado2=$mysqli->query($categorias);
+                                                                    while ($listadocategorias=$resultado2->fetch_assoc()) {
+                                                                ?>                            
+                                                      <option value="<?php echo ($listadocategorias["id_categoria"]);?>"><?php echo ($listadocategorias["nombre_categoria"]);?></option>
+                                                                    <?php } ?>
+                                             </select>
+                                </div> 
+                               
+                                 
+                                 
+                                   
                             </div>
                         </div>                      
                     </div></div> 
-                    <div class="modal-footer"><?php $usuario=$_SESSION['usuario']; ?>
+                    <div class="modal-footer" ><?php $usuario=$_SESSION['usuario']; ?>
                         <input type="text" value="crea_producto" style="display:none;" name="origen">
                         <input type="text" value="<?php echo $usuario; ?>" name="usuario" style="display:none;">
                         <input type="reset" class="btn btn-outline-secondary btn-lg" data-dismiss="modal" value="Cancelar">
