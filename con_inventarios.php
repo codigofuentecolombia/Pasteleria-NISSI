@@ -326,7 +326,8 @@
                                  
                                    
                            
-                         </div>                      
+                         </div>    
+                     <div></div>                  
                     
                     <div class="modal-footer" ><?php $usuario=$_SESSION['usuario']; ?>
                         <input type="text" value="crea_producto" style="display:none;" name="origen">
@@ -338,7 +339,7 @@
                </div>     
             </div>
         </div></div>
-        <div></div>
+      
     
 
 
