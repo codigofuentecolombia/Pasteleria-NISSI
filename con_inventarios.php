@@ -326,7 +326,7 @@
                                  
                                    
                             
-                            
+
                          </div>    
                      <div></div>                  
                     
@@ -344,7 +344,6 @@
       
 
     
-
 
        <!-- Modal -->
     <div class="modal fade text-left" id="iconSalida" tabindex="-1" role="dialog" aria-labelledby="myModalLabel35" aria-hidden="true">
