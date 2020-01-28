@@ -300,14 +300,16 @@
                                 </select>
                             </div> 
                                      <div class="form-group">
-                                           <label align="center" for="nombre_producto">Cantidad</label>
+                                           <label  for="nombre_producto">Cantidad</label>
                                            <input type="text" id="nombre_producto" class="form-control"  name="nombre_producto" required>
                                       </div>
-                                          <div class="form-group">
-                                              <label align="center" for="nombre_producto">Valor</label>
-                                              <input type="text" id="nombre_producto" class="form-control"  name="nombre_producto" required>
-                                          </div>
-                        </div> 
+                                          <div class="col-md-4 col-md-offset-4" > 
+                                                 <div class="form-group">
+                                                          <label for="nombre_producto">Precio</label>
+                                                         <input type="text" id="nombre_producto" class="form-control"  name="nombre_producto" required>
+                                                 </div>
+                                             </div>
+                        </div>          
                         <!-- SELECT CONECTADO A LA BD -->                         
                            
                           
@@ -438,14 +440,7 @@
                             </div> 
                           
                             <!-- SELECT CONECTADO A LA BD -->  
-                        <div class="row">
-                            <div class="col-sm-6 col-md-6 col-lg-6">
-                                <div class="form-group">
-                                    <label for="elaborado">Fabricado por la Empresa?</label>
-                                    <input type="checkbox" class="switch" id="switch1" checked="checked" name="elaborado" />
-                                </div>  
-                            </div>
-                        </div>                      
+                                           
                     </div></div> 
                     <div class="modal-footer"><?php $usuario=$_SESSION['usuario']; ?>
                         <input type="text" value="crea_producto" style="display:none;" name="origen">
