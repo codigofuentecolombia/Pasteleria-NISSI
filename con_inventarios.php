@@ -227,30 +227,42 @@
                 <form method="post" action="controllers/crear_elemento.php">
                     <div class="modal-body">
                     
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-lg-6">
-                            <div class="form-group">
-                            <label for="proveedor">Proveedor</label>
-                                <select id="proveedor" name="proveedor" class="form-control" required>
-                                    <option value="none" selected="" disabled="">Proveedor</option>
-                                                                <?php   
-                                                                    $proveedores="SELECT * FROM proveedores WHERE reg_eli=0";
-                                                                    $resultado2=$mysqli->query($proveedores);
-                                                                    while ($listadoproveedores=$resultado2->fetch_assoc()) {
-                                                                ?>                            
-                                    <option value="<?php echo ($listadoproveedores["NIT"]);?>"><?php echo ($listadoproveedores["nombre_proveedor"]);?></option>
+                         <div class="row">
+                                 <div class="col-md-6 col-sm-6 col-lg-6">
+                                     <div class="form-group">
+                                         <label for="proveedor">Proveedor</label>
+                                             <select id="proveedor" name="proveedor" class="form-control" required>
+                                                         <option value="none" selected="" disabled="">Proveedor</option>
+                                                                     <?php   
+                                                                       $proveedores="SELECT * FROM proveedores WHERE reg_eli=0";
+                                                                       $resultado2=$mysqli->query($proveedores);
+                                                                       while ($listadoproveedores=$resultado2->fetch_assoc()) {
+                                                                     ?>                            
+                                                             <option value="<?php echo ($listadoproveedores["NIT"]);?>"><?php echo ($listadoproveedores["nombre_proveedor"]);?></option>
                                                                     <?php } ?>
-                                </select>
-                            </div> 
-                        </div> 
+                                             </select>
+                                         </div> 
+                                     </div> 
+                             </div> 
+                            
+
+                              
+
+
+
+
+
+
+
                         <!-- Lista de Productos con Busqueda en la BD -->
-                        <div class="col-sm-6 col-md-6 col-lg-6">
+                     <div class="row">   
+                          <div class="col-sm-6 col-md-6 col-lg-6">
                             <div class="form-group">
                                 <input type="text" class="input-selectize" value="pretty,awesome">
-                            </div>
+                            
                                 <div class="form-group">
-                                    <h5>Basic Selectize select with Placeholder</h5>
-                                    <p>Add <code>.selectize-select</code> class to select for basic Selectize select field</p>
+                                   
+
                                     <select class="selectize-select">
                                         <option value="" selected>No city selected</option>
                                         <option value="1">Amsterdam</option>
@@ -318,10 +330,10 @@
                         </div>
                         
                         <!-- Lista de Productos con Busqueda en la BD -->
-                            <div class="form-group">
+                          <!--  <div class="form-group">
                                 <label for="nombre_producto">Factura</label>
                                 <input type="text" id="nombre_producto" class="form-control" placeholder="numero de factura" name="nombre_producto" required>
-                            </div>  
+                            </div>  -->
                         
                             
                             <!-- SELECT CONECTADO A LA BD -->
@@ -340,22 +352,7 @@
                                                                                               
                             </div>      
                             <!-- SELECT CONECTADO A LA BD -->                                                       
-                        </div>
-
-                        <div class="col-md-6 col-sm-6 col-lg-6">                           
-                        <div class="media">
-                            <a href="javascript: void(0);">
-                                <img src="app-assets/images/logo/logo.png" class="rounded mr-75" alt="profile image" height="200" width="200">
-                            </a>
-                            <div class="media-body mt-75">
-                                <div class="col-12 px-0 d-flex flex-sm-row flex-column justify-content-start"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <label class="btn btn-sm btn-primary ml-50 mb-50 mb-sm-0 cursor-pointer" for="account-upload">Subir Imagen</label>
-                            <input type="file" id="account-upload" hidden>
-                            <button class="btn btn-sm btn-secondary ml-50">Borrar</button>
-                        </div>    
+                          
                     </div>    
                     </div>        
 
@@ -379,19 +376,16 @@
                                            <label  for="nombre_producto">Cantidad</label>
                                            <input type="text" id="nombre_producto" class="form-control"  name="nombre_producto" required>
                                       </div>
-                                          <div class="col-md-4 col-md-offset-4" > 
-                                                 <div class="form-group">
-                                                          <label for="nombre_producto">Precio</label>
-                                                         <input type="text" id="nombre_producto" class="form-control"  name="nombre_producto" required>
-                                                 </div>
-                                             </div>
-                        </div>          
+                                        
+
+                        </div>             
+                     </div>
                         <!-- SELECT CONECTADO A LA BD -->                         
                            
                           
                          <!-- SELECT CONECTADO A LA BD -->  
                         <div class="row">
-                            <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="col-sm-6 col-md-6 col-lg-6">
                                 <div class="form-group">
                                     <label for="nombre_producto">Responsable</label>
                                            <select id="Unidad_medida" name="categoria" class="form-control" required>
