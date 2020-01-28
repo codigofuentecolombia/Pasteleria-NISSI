@@ -227,43 +227,30 @@
                 <form method="post" action="controllers/crear_elemento.php">
                     <div class="modal-body">
                     
-                         <div class="row">
-                                 <div class="col-md-6 col-sm-6 col-lg-6">
-                                     <div class="form-group">
-                                         <label for="proveedor">Proveedor</label>
-                                             <select id="proveedor" name="proveedor" class="form-control" required>
-                                                         <option value="none" selected="" disabled="">Proveedor</option>
-                                                                     <?php   
-                                                                       $proveedores="SELECT * FROM proveedores WHERE reg_eli=0";
-                                                                       $resultado2=$mysqli->query($proveedores);
-                                                                       while ($listadoproveedores=$resultado2->fetch_assoc()) {
-                                                                     ?>                            
-                                                             <option value="<?php echo ($listadoproveedores["NIT"]);?>"><?php echo ($listadoproveedores["nombre_proveedor"]);?></option>
-                                                                    <?php } ?>
-                                             </select>
-                                         </div> 
-                                     </div> 
-                             </div> 
-                            
-
-                              
-
-
-
-
-
-
-
-                        <!-- Lista de Productos con Busqueda en la BD -->
-                     <div class="row">   
-                          <div class="col-sm-6 col-md-6 col-lg-6">
-                            <div class="form-group">
-                                <input type="text" class="input-selectize" value="pretty,awesome">
+                        <div class="row"> <!-- Apertura de fila -->
+                            <div class="col-md-6 col-sm-6 col-lg-6">
+                                <div class="form-group">
+                                    <label for="proveedor">Proveedor</label>
+                                    <select id="proveedor" name="proveedor" class="form-control" required>
+                                                <option value="none" selected="" disabled="">Proveedor</option>
+                                                            <?php   
+                                                            $proveedores="SELECT * FROM proveedores WHERE reg_eli=0";
+                                                            $resultado2=$mysqli->query($proveedores);
+                                                            while ($listadoproveedores=$resultado2->fetch_assoc()) {
+                                                            ?>                            
+                                                    <option value="<?php echo ($listadoproveedores["NIT"]);?>"><?php echo ($listadoproveedores["nombre_proveedor"]);?></option>
+                                                        <?php } ?>
+                                    </select>
+                                </div> 
+                            </div> 
+<!-- Lista de Productos con Busqueda en la BD -->
+   
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="input-selectize" value="pretty,awesome">
                             
                                 <div class="form-group">
-                                   
-
-                                    <select class="selectize-select">
+                                        <select class="selectize-select">
                                         <option value="" selected>No city selected</option>
                                         <option value="1">Amsterdam</option>
                                         <option value="2">Antwerp</option>
@@ -326,10 +313,13 @@
                                         <option value="59">Zaragoza</option>
                                     </select>
                                 </div>
-
-                        </div>
-                        
                         <!-- Lista de Productos con Busqueda en la BD -->
+                        </div>
+                    </div> <!-- Cierre de Fila --> 
+  
+  
+                    <div class="row">                            
+                        
                           <!--  <div class="form-group">
                                 <label for="nombre_producto">Factura</label>
                                 <input type="text" id="nombre_producto" class="form-control" placeholder="numero de factura" name="nombre_producto" required>
