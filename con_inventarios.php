@@ -334,10 +334,11 @@
                         <input type="reset" class="btn btn-outline-secondary btn-lg" data-dismiss="modal" value="Cancelar">
                         <input type="submit" class="btn btn-primary btn-lg" value="Guardar">
                         <div>
-                        
+
                </div>     
             </div>
         </div></div>
+        <div></div>
     
 
 
