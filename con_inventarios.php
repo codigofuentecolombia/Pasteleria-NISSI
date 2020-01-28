@@ -250,9 +250,9 @@
                             </div>  
                             <!-- SELECT CONECTADO A LA BD -->
                             <div class="form-group">
-                            <label for="items">Items</label>
-                            <select id="items" name="items" class="jui-select-default form-control" required>
-                                <option value="none" selected="" disabled="">Items</option>
+                            <label for="producto">Producto</label>
+                            <select id="producto" name="producto" class="jui-select-default form-control" required>
+                                <option value="none" selected="" disabled="">producto</option>
                                                             <?php   
                                                                 $unindades="SELECT * FROM unidades_medida WHERE reg_eli=0";
                                                                 $resultado1=$mysqli->query($unindades);
