@@ -67,6 +67,9 @@
     <script src="app-assets/js/core/app-menu.js"></script> 
     <script src="app-assets/js/core/app.js"></script>
     <script src="app-assets/vendors/js/ui/prism.min.js"></script>  
+    <script src="app-assets/js/scripts/forms/select/form-selectize.js"></script>
+    <script src="app-assets/vendors/js/forms/select/selectize.min.js"></script>
+    <script src="app-assets/js/core/libraries/jquery_ui/jquery-ui.min.js"></script>
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
@@ -77,6 +80,7 @@
     <script src="app-assets/js/scripts/ui/jquery-ui/buttons-selects.js"></script>
     <script src="app-assets/js/scripts/forms/switch.js"></script>
     <script src="app-assets/js/scripts/forms/wizard-steps.js"></script>
+    <script src="app-assets/js/scripts/forms/select/form-selectize.js"></script>
     <!-- END: Page JS-->
 
 </body>
