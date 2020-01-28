@@ -241,13 +241,87 @@
                                     <option value="<?php echo ($listadoproveedores["NIT"]);?>"><?php echo ($listadoproveedores["nombre_proveedor"]);?></option>
                                                                     <?php } ?>
                                 </select>
-
-
                             </div> 
+                        </div> 
+                        <!-- Lista de Productos con Busqueda en la BD -->
+                        <div class="form-group">
+                                            <h5>Basic Selectize input</h5>
+                                            <p>Add <code>.input-selectize</code> class to input field and add value comma saperated. </p>
+                                            <input type="text" class="input-selectize" value="pretty,awesome">
+                                        </div>
+                                        <div class="form-group">
+                                            <h5>Basic Selectize select with Placeholder</h5>
+                                            <p>Add <code>.selectize-select</code> class to select for basic Selectize select field</p>
+                                            <select class="selectize-select">
+                                                <option value="" selected>No city selected</option>
+                                                <option value="1">Amsterdam</option>
+                                                <option value="2">Antwerp</option>
+                                                <option value="3">Athens</option>
+                                                <option value="4">Barcelona</option>
+                                                <option value="5">Berlin</option>
+                                                <option value="6">Birmingham</option>
+                                                <option value="7">Bradford</option>
+                                                <option value="8">Bremen</option>
+                                                <option value="9">Brussels</option>
+                                                <option value="10">Bucharest</option>
+                                                <option value="11">Budapest</option>
+                                                <option value="12">Cologne</option>
+                                                <option value="13">Copenhagen</option>
+                                                <option value="14">Dortmund</option>
+                                                <option value="15">Dresden</option>
+                                                <option value="16">Dublin</option>
+                                                <option value="17">Düsseldorf</option>
+                                                <option value="18">Essen</option>
+                                                <option value="19">Frankfurt</option>
+                                                <option value="20">Genoa</option>
+                                                <option value="21">Glasgow</option>
+                                                <option value="22">Gothenburg</option>
+                                                <option value="23">Hamburg</option>
+                                                <option value="24">Hannover</option>
+                                                <option value="25">Helsinki</option>
+                                                <option value="26">Leeds</option>
+                                                <option value="27">Leipzig</option>
+                                                <option value="28">Lisbon</option>
+                                                <option value="29">Łódź</option>
+                                                <option value="30">London</option>
+                                                <option value="31">Kraków</option>
+                                                <option value="32">Madrid</option>
+                                                <option value="33">Málaga</option>
+                                                <option value="34">Manchester</option>
+                                                <option value="35">Marseille</option>
+                                                <option value="36">Milan</option>
+                                                <option value="37">Munich</option>
+                                                <option value="38">Naples</option>
+                                                <option value="39">Palermo</option>
+                                                <option value="40">Paris</option>
+                                                <option value="41">Poznań</option>
+                                                <option value="42">Prague</option>
+                                                <option value="43">Riga</option>
+                                                <option value="44">Rome</option>
+                                                <option value="45">Rotterdam</option>
+                                                <option value="46">Seville</option>
+                                                <option value="47">Sheffield</option>
+                                                <option value="48">Sofia</option>
+                                                <option value="49">Stockholm</option>
+                                                <option value="50">Stuttgart</option>
+                                                <option value="51">The Hague</option>
+                                                <option value="52">Turin</option>
+                                                <option value="53">Valencia</option>
+                                                <option value="54">Vienna</option>
+                                                <option value="55">Vilnius</option>
+                                                <option value="56">Warsaw</option>
+                                                <option value="57">Wrocław</option>
+                                                <option value="58">Zagreb</option>
+                                                <option value="59">Zaragoza</option>
+                                            </select>
+                                        </div>
+                        <!-- Lista de Productos con Busqueda en la BD -->
                             <div class="form-group">
                                 <label for="nombre_producto">Factura</label>
                                 <input type="text" id="nombre_producto" class="form-control" placeholder="numero de factura" name="nombre_producto" required>
                             </div>  
+                        
+                            
                             <!-- SELECT CONECTADO A LA BD -->
                             <div class="form-group">
                             <label for="items">Items</label>
