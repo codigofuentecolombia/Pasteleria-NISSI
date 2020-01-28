@@ -249,7 +249,7 @@
                                 <div class="form-group">
                                     <input type="text" class="input-selectize" value="pretty,awesome">
                             
-                                <div class="form-group">
+
                                         <select class="selectize-select">
                                         <option value="" selected>No city selected</option>
                                         <option value="1">Amsterdam</option>
@@ -312,7 +312,7 @@
                                         <option value="58">Zagreb</option>
                                         <option value="59">Zaragoza</option>
                                     </select>
-                                </div>
+
                         <!-- Lista de Productos con Busqueda en la BD -->
                         </div>
                     </div> <!-- Cierre de Fila --> 
