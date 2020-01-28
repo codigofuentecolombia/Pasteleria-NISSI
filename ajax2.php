@@ -17,7 +17,7 @@ $result = $connexion->query(
 );
 if ($result->num_rows > 0) { 
     while ($row = $result->fetch_assoc()) {                
-        $html .= '<div><a class="suggest-element" data="'.utf8_encode($row['codigo_producto']).'" id="codigo_producto'.$row['codigo_producto'].'"><table><tr><td>'.utf8_encode($row['nombre_producto']).'</td><td></td></tr></table></a></div><script>alert("No se puede crear este proveedor, ya existe");</script>';
+        $html .= '<div><a class="suggest-element2" data="'.utf8_encode($row['codigo_producto']).'" id="codigo_producto'.$row['codigo_producto'].'"><table><tr><td>'.utf8_encode($row['nombre_producto']).'</td><td></td></tr></table></a></div>';
     }
 } 
 echo $html;
