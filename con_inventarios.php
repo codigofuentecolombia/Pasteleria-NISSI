@@ -255,7 +255,7 @@
                                         <option value="" selected>No city selected</option>
                                         <option value="1">Amsterdam</option>
                                         <option value="2">Antwerp</option>
-                                        <option value="3">Athens</option>
+                                        <option value="3 ">Athens</option>
                                         <option value="4">Barcelona</option>
                                         <option value="5">Berlin</option>
                                         <option value="6">Birmingham</option>
