@@ -321,107 +321,94 @@
        <!-- Modal -->
     <div class="modal fade text-left" id="iconSalida" tabindex="-1" role="dialog" aria-labelledby="myModalLabel35" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
+         <div class="modal-content">
                 <div class="modal-header bg-danger white">
                     <h3 class="modal-title" id="myModalLabel34" style="color:#fff;">Baja de Inventario</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form method="post" action="controllers/crear_elemento.php">
+                <div method="post" action="controllers/crear_elemento.php">
                     <div class="modal-body">
+                    <div class="row">
+                       <div class="col-sm-3 col-md-3 col-lg-3">  
+                         <div class="form-group">
+                            <label  for="salida_producto"> Producto</label>
+                                 <select id="salida_producto" name="categoria" class="form-control" required>
+                                            <option value="none" selected="" disabled="">Producto</option>
+                                                <?php   
+                                                    $categorias="SELECT * FROM categorias WHERE reg_eli=0";
+                                                    $resultado2=$mysqli->query($categorias);
+                                                    while ($listadocategorias=$resultado2->fetch_assoc()) {
+                                                ?>                            
+                                            <option value="<?php echo ($listadocategorias["id_categoria"]);?>"><?php echo ($listadocategorias["nombre_categoria"]);?></option>
+                                                <?php } ?>
+                                   </select>
+                            
+                             
+                         </div> 
+                       </div>
+                       <div class="col-sm-3 col-md-3 col-lg-3">
+                         <div class="form-group">  
+                            <label for="p_cantidad">Cantidad</label>
+                            <input type="text" id="precio_sugerido" class="form-control"  name="precio_sugerido" required>      
+                         
+                        </div>
+                        </div>
+                        <div class="col-sm-3 col-md-3 col-lg-3">  
+                         <div class="form-group">
+                            <label  for="unidad_producto"> Producto</label>
+                                 <select id="Unidad_producto" name="unidad del producto" class="form-control" required>
+                                            <option value="none" selected="" disabled="">Producto</option>
+                                                <?php   
+                                                    $categorias="SELECT * FROM categorias WHERE reg_eli=0";
+                                                    $resultado2=$mysqli->query($categorias);
+                                                    while ($listadocategorias=$resultado2->fetch_assoc()) {
+                                                ?>                            
+                                            <option value="<?php echo ($listadocategorias["id_categoria"]);?>"><?php echo ($listadocategorias["nombre_categoria"]);?></option>
+                                                <?php } ?>
+                                   </select>
+                            
+                             
+                         </div> 
+                       </div>
+                        <div class="col-sm-3 col-md-3 col-lg-3">
+                             <div class="form-group">  
+                             <form name="formulario" method="post" action="http://pagina.com/send.php">
+                                    <!-- Campo de entrada de fecha -->
+                                         fecha :
+                                        <input type="date" name="fecha" min="2018-03-25"
+                                                                        max="2018-05-25" step="2">
+                                </form>
+                             </div>
+                         </div>
+                    </div>
                     
                     <div class="row">
-                        <div class="col-md-6 col-sm-6 col-lg-6">
-                            <div class="form-group">
-                                <label for="id_producto">codigo</label>
-                                <input type="text" id="id_producto" class="form-control" placeholder="id Item" name="id_producto" >
-                            </div> 
-                            <div class="form-group">
-                                <label for="nombre_producto">Nombre</label>
-                                <input type="text" id="nombre_producto" class="form-control" placeholder="Nombre Item" name="nombre_producto" required>
-                            </div>  
-                            <!-- SELECT CONECTADO A LA BD -->
-                            <div class="form-group">
-                            <label for="medida_producto">Unidad de Medida</label>
-                            <select id="medida_producto" name="medida_producto" class="jui-select-default form-control" required>
-                                <option value="none" selected="" disabled="">Unidad de Medida</option>
-                                                            <?php   
-                                                                $unindades="SELECT * FROM unidades_medida WHERE reg_eli=0";
-                                                                $resultado1=$mysqli->query($unindades);
-                                                                while ($listadounidades=$resultado1->fetch_assoc()) {
-                                                            ?>                            
-                                <option value="<?php echo ($listadounidades["id_unidad"]);?>"><?php echo ($listadounidades["abrev_unidad"]);?></option>
-                                                                <?php } ?>
-                            </select>                                                                   
-                            </div>      
-                            <!-- SELECT CONECTADO A LA BD -->                                                       
+                       
+                       <div class="col-sm-12 col-md-12 col-lg-12">
+                         <div class="form-group">  
+                            <label for="p_razon">Razon</label>
+                            <input type="text" id="precio_sugerido" class="form-control"  name="precio_sugerido" required>      
+                         
                         </div>
-
-                        <div class="col-md-6 col-sm-6 col-lg-6">                           
-                        <div class="media">
-                            <a href="javascript: void(0);">
-                                <img src="app-assets/images/logo/logo.png" class="rounded mr-75" alt="profile image" height="200" width="200">
-                            </a>
-                            <div class="media-body mt-75">
-                                <div class="col-12 px-0 d-flex flex-sm-row flex-column justify-content-start"></div>
-                            </div>
                         </div>
-                        <div>
-                            <label class="btn btn-sm btn-primary ml-50 mb-50 mb-sm-0 cursor-pointer" for="account-upload">Subir Imagen</label>
-                            <input type="file" id="account-upload" hidden>
-                            <button class="btn btn-sm btn-secondary ml-50">Borrar</button>
-                        </div>    
-                    </div>    
-                    </div>        
+                         
+                    </div>                     
+                           
 
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-lg-6">   
-                            <!-- SELECT CONECTADO A LA BD -->
-                            <div class="form-group">                                            
-                                <label for="categoria">Categoria</label>
-                                <select id="categoria" name="categoria" class="form-control" required>
-                                    <option value="none" selected="" disabled="">Categoria</option>
-                                                                <?php   
-                                                                    $categorias="SELECT * FROM categorias WHERE reg_eli=0";
-                                                                    $resultado2=$mysqli->query($categorias);
-                                                                    while ($listadocategorias=$resultado2->fetch_assoc()) {
-                                                                ?>                            
-                                    <option value="<?php echo ($listadocategorias["id_categoria"]);?>"><?php echo ($listadocategorias["nombre_categoria"]);?></option>
-                                                                    <?php } ?>
-                                </select>
-                            </div> 
-                        </div> 
-                        <!-- SELECT CONECTADO A LA BD -->                         
-                        <div class="col-md-6 col-sm-6 col-lg-6">         
-                            <!-- SELECT CONECTADO A LA BD -->
-                            <div class="form-group">                                            
-                                <label for="proveedor">Proveedor</label>
-                                <select id="proveedor" name="proveedor" class="form-control" required>
-                                    <option value="none" selected="" disabled="">Proveedor</option>
-                                                                <?php   
-                                                                    $proveedores="SELECT * FROM proveedores WHERE reg_eli=0";
-                                                                    $resultado2=$mysqli->query($proveedores);
-                                                                    while ($listadoproveedores=$resultado2->fetch_assoc()) {
-                                                                ?>                            
-                                    <option value="<?php echo ($listadoproveedores["NIT"]);?>"><?php echo ($listadoproveedores["nombre_proveedor"]);?></option>
-                                                                    <?php } ?>
-                                </select>
-                            </div> 
-                          
-                            <!-- SELECT CONECTADO A LA BD -->  
-                                           
-                    </div></div> 
+                  
+                  </div> 
                     <div class="modal-footer"><?php $usuario=$_SESSION['usuario']; ?>
                         <input type="text" value="crea_producto" style="display:none;" name="origen">
                         <input type="text" value="<?php echo $usuario; ?>" name="usuario" style="display:none;">
-                        <input type="reset" class="btn btn-outline-secondary btn-lg" data-dismiss="modal" value="Cancelar">
+                        <input l="reset" class="btn btn-outline-secondary btn-lg" data-dismiss="modal" value="Cancelar">
                         <input type="submit" class="btn btn-primary btn-lg" value="Guardar">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div></div>    
+             </div>
+          </div>
+      </div>
+    </div> 
+        
 
        <!-- Modal -->
        <div class="modal fade text-left" id="iconForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel34" aria-hidden="true">
