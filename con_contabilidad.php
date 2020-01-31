@@ -139,6 +139,32 @@
                                            
                                            
 
+                                        </div> <br> 
+                                        <div class="row">
+                                           <div class="col-sm-3 co-md-3 col-lg-3 text-center">
+                                              <label  for="preparado_por">Preparado por</label>
+                                              <input type="text" id="preparado_por" class="form-control"  name="preparado_por" required>
+                                              
+                                                 
+                                           </div>
+                                           <div class="col-sm-3 co-md-3 col-lg-3 text-center">
+                                              <label  for="revisado_por">Revisado por</label>
+                                              <input type="text" id="revisado_por" class="form-control"  name="revisado_por" required>
+                                                 
+                                           </div>
+                                           <div class="col-sm-3 co-md-3 col-lg-3 text-center">
+                                              <label  for="aprobado_por">Aprobado por</label>
+                                              <input type="text" id="aprobado_por" class="form-control"  name="aprobado_por" required>
+                                                 
+                                           </div>
+                                           <div class="col-sm-3 co-md-3 col-lg-3 text-center">
+                                              <label  for="contabilizado">Contabilizado</label>
+                                              <input type="text" id="contabilizado" class="form-control"  name="contabilizado" required>
+                                                 
+                                           </div>
+                                           
+                                           
+
                                         </div>
 
                                         
