@@ -37,6 +37,7 @@
         </div>
         <div class="col-sm-2 co-md-2 col-lg-2">
             <a href="#" class="button"><img src="bebida.jpg" style="width:80%;height:auto;" > <h3 align="center">item 2</h3></a>
+            
         </div>
         <div class="col-sm-2 co-md-2 col-lg-2">
             <a href="#" class="button"><img src="http://localhost/dashboard/app-assets/images/logo/logo.png" style="width:80%;height:auto;" > <h3 align="center">item 3</h3></a>
