@@ -23,9 +23,18 @@
                 
             </div>
             <div class="content-body"> <br> <br>
-
-
-    <div class="row">
+            <section id="events">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-content collapse show">
+                                    <div class="card-body card-dashboard dataTables_wrapper">
+                                        <!-- Evento 
+                                        <div class="dt-events-log">
+                                            Event summary - new events added at the top
+                                        </div> -->
+                                        <table class="table table-striped table-bordered responsive dataex-select-events">
+                                        <div class="row">
         <div class="col-sm-2 co-md-2 col-lg-2">
             <a href="#" class="button"><img src="http://localhost/dashboard/app-assets/images/logo/logo.png" style="width:80%;height:auto;"><br><h3 align="center">item 1</h3></a>
         </div>
@@ -82,30 +91,36 @@
             <a href="#" class="button"><img src="http://localhost/dashboard/app-assets/images/logo/logo.png" style="width:80%;height:auto;" > <h3 align="center">item 18</h3></a>
         </div>
         <div class="col-sm-2 co-md-2 col-lg-2">
-            <a href="#" class="button"><img src="bebida.jpg" style="width:80%;height:auto;" > <br>  <h3 align="center">item 19</h3></a>
+            <a href="#" class="button"><img src="bebida.jpg" style="width:80%;height:auto;" tipe="radio" > <br>  <h3 align="center">item 19</h3></a>
         </div>
         
     </div>
     <br><br>
-    <div class="row">
-               <div class="col-sm-2 co-md-2 col-lg-2" >
-                  <button type="button" class="btn mb-1 btn-primary btn-lg btn-block">Eliminar item</button>
-                  <button type="button" class="btn mb-1 btn-secondary btn-lg btn-block">no se que poner</button> 
-               </div>
-         
-        <div class="content-header-right text-md-right col-md-12 col-12">
-             <label for="elaborado">¿Finalizar compra?</label>
-             <input type="checkbox" class="switch" id="switch1" checked="checked" name="elaborado" /> 
-             <button type="button" class="btn mb-1 btn-primary btn-lg btn-block">Eliminar item</button>
-             <button type="button" class="btn mb-1 btn-secondary btn-lg btn-block">no se que poner</button> 
-         </div>
+    <div class="row"> 
+            <div class="col-sm-7 co-md-7 col-lg-7">
 
-         
-         
+            </div>
+            <div class="col-sm-2 co-md-2 col-lg-2">
+                <button type="button" class="btn mb-1 btn-secondary btn-lg btn-block">Elimiar item</button>
+            </div> 
+              <div  class="col-sm-3 co-md-3 col-lg-3 text-right">
+                  <button type="button" class="btn mb-1 btn-primary btn-lg btn-block">Finalizar compra</button>
+              </div>
 
 
     </div>
-    
+     
+                        
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
 
 
 
