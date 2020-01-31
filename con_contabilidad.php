@@ -63,7 +63,7 @@
 
                                         
 
-                                        </div> <br> 
+                                        </div> <br> <br>
                                         <div class="row"> 
                                               <div class="col-sm-2 co-md-2 col-lg-2 text-center">
                                                     <label  for="valor_no_grabado">Valor no grabado</label>
@@ -93,15 +93,15 @@
 
                                         </div><br> 
                                         <div class="row">
-                                           <div class="col-sm-2 co-md-2 col-lg-2 text-center">
-                                              <label  for="sub_total_iva">Subtotal iva</label>
+                                           <div class="col-sm-1 co-md-1 col-lg-1 text-center">
+                                              <label  for="sub_total_iva">Subtotal </label>
                                               <input type="text" id="sub_total_iva" class="form-control"  name="sub_total_iva" required>    
                                            </div>
                                            <div class="col-sm-3 co-md-3 col-lg-3 text-center">
                                               <label  for="rete_fuente_iva">Retencion en la fuente por iva</label>
                                               <input type="text" id="rete_fuente_iva" class="form-control"  name="rete_fuente_iva" required>    
                                            </div>
-                                           <div class="col-sm-4 co-md-4 col-lg-4 text-center">
+                                           <div class="col-sm-3 co-md-3 col-lg-3 text-center">
                                               <label  for="rete_fuente_ica">Retencion en la fuente por ica</label>
                                               <input type="text" id="rete_fuente_ica" class="form-control"  name="rete_fuente_ica" required>    
                                            </div>
@@ -109,18 +109,34 @@
                                               <label  for="rete_fuente_renta">Retencion en la fuente por renta </label>
                                               <input type="text" id="rete_fuente_renta" class="form-control"  name="rete_fuente_renta" required>    
                                            </div>
+                                           <div class="col-sm-2 co-md-2 col-lg-2 text-center">
+                                              <label  for="total">Total</label>
+                                              <input type="text" id="total" class="form-control"  name="total" required>    
+                                           </div>
                                            
                                           
                                         </div> <br> 
                                         <div class="row">
-                                        <div class="col-sm-9 co-md-9 col-lg-9 text-center">
+                                           <div class="col-sm-3 co-md-3 col-lg-3 text-center">
                                               <label  for="espa1"></label>
+                                              
                                                  
                                            </div>
                                            <div class="col-sm-3 co-md-3 col-lg-3 text-center">
-                                              <label  for="total">Total</label>
-                                              <input type="text" id="total" class="form-control"  name="total" required>    
+                                              <label  for="codigo">Codigo</label>
+                                              <input type="text" id="codigo" class="form-control"  name="codigo" required>
+                                                 
                                            </div>
+                                           <div class="col-sm-3 co-md-3 col-lg-3 text-center">
+                                              <label  for="debitos">Debitos</label>
+                                              <input type="text" id="debitos" class="form-control"  name="debitos" required>
+                                                 
+                                           </div>
+                                           <div class="col-sm-3 co-md-3 col-lg-3 text-center">
+                                              <label  for="espa1"></label>
+                                                 
+                                           </div>
+                                           
                                            
 
                                         </div>
