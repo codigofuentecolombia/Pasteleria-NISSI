@@ -6,7 +6,7 @@
                 <li class=" nav-item"><a href="con_pedidos.php"><i class="mbri-edit"></i><span class="menu-title" data-i18n="Admin Panels"></span>Pedido</span></a></li>
                 <li class=" nav-item"><a href="#"><i class="mbri-cash"></i><span class="menu-title" data-i18n="Apps">PVD</span></a></li>
                 <li class=" nav-item"><a href="#"><i class="mbri-database"></i><span class="menu-title" data-i18n="Pages">Contable</span></a></li>
-                <li class=" nav-item"><a href="con_configuracion.php"><i class="mbri-setting3"></i><span class="menu-title" data-i18n="Configura">Configura</span></a></li>
+                <li class=" nav-item"><a href="con_configuracion.php"><i class="mbri-setting3"></i><span class="menu-title" data-i18n="Configura">configuracion</span></a></li>
             </ul>
         </div>
     </div>

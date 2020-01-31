@@ -21,11 +21,7 @@
 
                     </div>
                 </div>
-            <!--<div class="content-header-right text-md-right col-md-6 col-12">
-                    <div class="btn-group">
-                    <a class="btn btn-float btn-float-lg btn-pink" style="color:#fff;"><i class="la la-birthday-cake"  data-toggle="modal" data-target="#iconForm"></i><span>Crear</span></a>
-                    </div>
-                </div> -->
+           
             </div>
             <div class="content-body"> 
             <section id="number-tabs">
@@ -155,34 +151,101 @@
                                             </fieldset>
 
                                             <!-- Step 3 -->
-                                            <h6>Datos del Evento</h6>
+                                            <h6>Datos del pedido</h6>
                                             <fieldset>
                                                 <div class="row">
-                                                    <div class="col-md-6">
+                                                    <div class="col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <label for="meetingName1">nombre del evento:</label>
-                                                            <input type="text" class="form-control" id="meetingName1">
-                                                        </div>
+                                                               <label  for="cantidad">Cantidad</label>
+                                                               <input type="text" id="cantidad" class="form-control"  name="nombre_producto" required>
 
-                                                        <div class="form-group">
-                                                            <label for="meetingLocation1">Localización:</label>
-                                                            <input type="text" class="form-control" id="meetingLocation1">
                                                         </div>
+                                                        
 
+                                                    </div>
+                                                    <div class="col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <label for="participants1">nombres de los participantes</label>
-                                                            <textarea name="participants" id="participants1" rows="4" class="form-control"></textarea>
+                                                               <label  for="nombre_producto">Producto</label>
+                                                               <input type="text" id="nombre_producto" class="form-control"  name="nombre_producto" required>
+
                                                         </div>
+                                                        
+
+                                                    </div>
+                                                    <div class="col-sm-2 col-md-2 col-lg-2">
+                                                        <div class="form-group">
+                                                               <label  for="precio_venta">Precio de venta</label>
+                                                               <input type="text" id="precio_venta" class="form-control"  name="nombre_producto" required>
+
+                                                        </div>
+                                                        
+
+                                                    </div>
+                                                    <div class="col-sm-2 col-md-2 col-lg-2">
+                                                        <div class="form-group">
+                                                               <label  for="%_descuento">% de _descuento</label>
+                                                               <input type="text" id="%_descuento" class="form-control"  name="nombre_producto" required>
+
+                                                        </div>
+                                                        
+
+                                                    </div>
+                                                    <div class="col-sm-2 col-md-2 col-lg-2">
+                                                        <div class="form-group">
+                                                               <label  for="sub_total">sub total</label>
+                                                               <input type="text" id="sub_total" class="form-control"  name="nombre_producto" required>
+
+                                                        </div>
+                                                        
+
+                                                    </div>
+                                                    <div class="col-sm-2 col-md-2 col-lg-2">
+                                                        <div class="form-group">
+                                                               <label  for="total" >Total</label>
+                                                               <input type="text" id="total" class="form-control"  name="nombre_producto" required>
+
+                                                        </div>
+                                                        
+
                                                     </div>
 
-                                                    <div class="col-md-6">
-                                                        <div class="form-group">
-                                                            <label for="decisions1">decisiones alcanzadas </label>
-                                                            <textarea name="decisions" id="decisions1" rows="4" class="form-control"></textarea>
-                                                        </div>
-                                                      
-                                                    </div>
                                                 </div>
+                                                <div class="row">
+                                                <table class="table table-striped table-bordered responsive ">
+                                            <thead>
+                                                <tr>
+                                                    <th>cantidad</th>
+                                                    <th>productos</th>
+                                                    <th>precio de venta</th>
+                                                    <th>% de descuento</th>
+                                                    <th>sub total</th>
+                                                    <th>total</th>
+                                                    
+                                                </tr>
+                                                        <?php   
+                                                            $inventarios="SELECT * FROM productos INNER JOIN unidades_medida ON productos.medida_producto=unidades_medida.id_unidad INNER JOIN proveedores on productos.proveedor=proveedores.NIT INNER JOIN categorias ON productos.categoria=categorias.id_categoria WHERE productos.reg_eli=0 ORDER BY productos.id_producto ASC";
+                                                            $resultado=$mysqli->query($inventarios);
+                                                        ?>
+                                            </thead>
+                                            <tbody>
+                                                      <th></th>
+                                                      <th></th>
+                                                      <th></th>
+                                                      <th></th>
+                                                      <th></th>
+                                                      <th></th>
+                                                      
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    
+                                                   
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+
+                                                </div>
+                                                
                                             </fieldset>
                                         </form>
                                     </div>
