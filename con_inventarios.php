@@ -378,7 +378,9 @@
                                     <!-- Campo de entrada de fecha -->
                                          fecha :
                                         <input type="date" name="fecha" min="2018-03-25"
+                                                                       
                                                                         max="2018-05-25" step="2">
+
                                 </form>
                              </div>
                          </div>
