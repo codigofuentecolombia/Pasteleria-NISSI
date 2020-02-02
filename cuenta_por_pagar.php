@@ -15,7 +15,7 @@
         <div class="content-wrapper">
             <div class="content-header row">
                 <div class="content-header-right text-md-right col-md-7 col-12">
-                    <h1 class="content-header-title mb-6">Cuentas por cobrar</h1>
+                    <h1 class="content-header-title mb-6">Cuentas por pagar</h1>
                     <div class="row breadcrumbs-top">
 
                     </div>
@@ -64,13 +64,13 @@
                                                     </div>
                                                     <div class="col-sm-2 col-lg-2 col-md-2">
                                                         <div class="form-group ">
-                                                            <h2 >Cartera total</h2>
+                                                            <h2 >Total deuda</h2>
                                                         </div>
 
                                                     </div>
                                                     <div class="col-sm-2 col-lg-2 col-md-2">
                                                         <div class="form-group ">
-                                                        <output  class="form-control"  name="cartera_total" required>
+                                                        <output  class="form-control"  name="total_deuda" required>
                                                         </div>
 
                                                     </div>
@@ -80,7 +80,7 @@
                                                 <table class="table table-striped table-bordered responsive ">
                                             <thead>
                                                 <tr>
-                                                    <th class="text-center">Nombre del cliente</th>
+                                                    <th class="text-center">proveedores</th>
                                                     <th class="text-center">Facutra numero</th>
                                                     <th class="text-center">Valor </th>
                                                     <th class="text-center">Fecha</th>

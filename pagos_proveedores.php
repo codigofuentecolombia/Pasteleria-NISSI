@@ -15,7 +15,7 @@
         <div class="content-wrapper">
             <div class="content-header row">
                 <div class="content-header-right text-md-right col-md-7 col-12">
-                    <h1 class="content-header-title mb-6">Cuentas por cobrar</h1>
+                    <h1 class="content-header-title mb-6">Pago a proveedores</h1>
                     <div class="row breadcrumbs-top">
 
                     </div>
@@ -37,57 +37,18 @@
                                         <div class="card-content collapse show">
                                             <div class="card-body">
                                             <fieldset>
-                                                <div class="row">
-                                                <div class="col-sm-2 col-lg-2 col-md-2">
-                                                        <div class="form-group ">
-
-                                                        </div>
-
-                                                    </div>
-                                                <div class="col-sm-2 col-lg-2 col-md-2">
-                                                        <div class="form-group ">
-
-                                                        </div>
-
-                                                    </div>
-                                                <div class="col-sm-2 col-lg-2 col-md-2">
-                                                        <div class="form-group ">
-
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="col-sm-2 col-lg-2 col-md-2">
-                                                        <div class="form-group ">
-
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="col-sm-2 col-lg-2 col-md-2">
-                                                        <div class="form-group ">
-                                                            <h2 >Cartera total</h2>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="col-sm-2 col-lg-2 col-md-2">
-                                                        <div class="form-group ">
-                                                        <output  class="form-control"  name="cartera_total" required>
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
+                                               
                                             <div class="row">
                                                 <table class="table table-striped table-bordered responsive ">
                                             <thead>
                                                 <tr>
-                                                    <th class="text-center">Nombre del cliente</th>
-                                                    <th class="text-center">Facutra numero</th>
-                                                    <th class="text-center">Valor </th>
-                                                    <th class="text-center">Fecha</th>
-                                                    <th class="text-center">Fecha de vencimento</th>
-                                                    <th class="text-center">Dias</th>
-                                                    <th class="text-center">Soporte numero</th>
-                                                    <th class="text-center">Fecha de pago</th>
+                                                    <th class="text-center">proveedores</th>
+                                                    <th class="text-center">Productos contratados </th>
+                                                    <th class="text-center">Precio de los productos</th>
+                                                    <th class="text-center">Numero de pedidos </th>
+                                                    <th class="text-center">Plazo de entrega</th>
+                                                    <th class="text-center">Metodo de pago</th>
+                                                    <th class="text-center">Cuenta corriente</th>
                                                 
                                                     
                                                 </tr>
@@ -98,7 +59,7 @@
                                             </thead>
                                             <tbody>
                                                       <th></th>
-                                                      <th></th>
+                                                      
                                                       <th></th>
                                                       <th></th>
                                                       <th></th>
@@ -110,7 +71,7 @@
                                             </tbody>
                                             <tfoot>
                                                 <tr>
-                                                <th></th>
+                                                
                                                 <th ></th>
                                                 <th></th>
                                                 <th></th>
