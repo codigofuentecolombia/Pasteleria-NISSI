@@ -14,8 +14,8 @@
         <div class="content-overlay"></div>
         <div class="content-wrapper">
             <div class="content-header row">
-                <div class="content-header-right text-md-right col-md-7 col-12">
-                    <h1 class="content-header-title mb-6">Pago a proveedores</h1>
+                <div class="content-header-right text-md-right col-md-12 col-12">
+                    <h1 class="content-header-title mb-12 text-center">Informacion de empleados</h1>
                     <div class="row breadcrumbs-top">
 
                     </div>
@@ -38,56 +38,48 @@
                                             <div class="card-body">
                                             <fieldset>
                                                 <div class="row">
-                                                <div class="col-sm-2 col-lg-2 col-md-2">
-                                                        <div class="form-group ">
-
+                                                    <div class="col-lg-2 col-md-2 col-sm-2">
+                                                        <div class="form-group">
+                                                            <label for="nombre" > Nombre:</label>
+                                                            <input type="text" name="nombre">
                                                         </div>
-
-                                                    </div>
-                                                <div class="col-sm-2 col-lg-2 col-md-2">
-                                                        <div class="form-group ">
-
-                                                        </div>
-
-                                                    </div>
-                                                <div class="col-sm-2 col-lg-2 col-md-2">
-                                                        <div class="form-group ">
-
-                                                        </div>
-
                                                     </div>
                                                     <div class="col-sm-2 col-lg-2 col-md-2">
-                                                        <div class="form-group ">
-
-                                                        </div>
+                                                        <label for="id_empleado"> id empleado</label>
+                                                        <input type="text" name="id_empleado">
+                                                    </div>
+                                                    <div class="col-md-2 col-lg-2 col-sm-2">
 
                                                     </div>
-                                                    <div class="col-sm-2 col-lg-2 col-md-2">
-                                                        <div class="form-group ">
-                                                            <h2 >Total deuda</h2>
+                                                    <div class="col-md-4 col-sm-4 col-lg-4">                           
+                                                    <div class="media">
+                                                        <a href="javascript: void(0);">
+                                                            <img src="app-assets/images/logo/logo.png" class="rounded mr-75" alt="profile image" height="200" width="auto">
+                                                        </a>
+                                                        <div class="media-body mt-75">
+                                                            <div class="col-12 px-0 d-flex flex-sm-row flex-column justify-content-start"></div>
                                                         </div>
-
-                                                    </div>
-                                                    <div class="col-sm-2 col-lg-2 col-md-2">
-                                                        <div class="form-group ">
-                                                        <output  class="form-control"  name="total_deuda" required>
-                                                        </div>
-
                                                     </div>
 
                                                 </div>
-                                            <div class="row">
-                                                <table class="table table-striped table-bordered responsive ">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-10 col-sm-10">
+                                                   <div class="table-responsive">
+                                                   <table class="table table-striped table-bordered responsive table-hover ">
                                             <thead>
                                                 <tr>
-                                                    <th class="text-center">Productos contratados</th>
-                                                    <th class="text-center">Precio del producto</th>
-                                                    <th class="text-center">Valor </th>
-                                                    <th class="text-center">Fecha</th>
-                                                    <th class="text-center">Fecha de vencimento</th>
-                                                    <th class="text-center">Dias</th>
-                                                    <th class="text-center">Soporte numero</th>
-                                                    <th class="text-center">Fecha de pago</th>
+                                                    <th class="text-center">fecha de ingreso</th>
+                                                    <th class="text-center">N. de empleado</th>
+                                                    <th class="text-center">nombre </th>
+                                                    <th class="text-center">apellido</th>
+                                                    <th class="text-center">Fecha de nacimiento</th>
+                                                    <th class="text-center">lugar de nacimiento</th>
+                                                    <th class="text-center">cedula </th>
+                                                    <th class="text-center">sexo </th>
+                                                    <th class="text-center">estado civil </th>
+                                                    <th class="text-center">correo electronico</th>
+                                                    <th class="text-center">telefono </th>
                                                 
                                                     
                                                 </tr>
@@ -97,6 +89,9 @@
                                                         ?>
                                             </thead>
                                             <tbody>
+                                                      <th></th>
+                                                      <th></th>
+                                                      <th></th>
                                                       <th></th>
                                                       <th></th>
                                                       <th></th>
@@ -118,10 +113,22 @@
                                                 <th></th>
                                                 <th></th>
                                                 <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                <th></th>
+                                                
                                                    
                                                 </tr>
                                             </tfoot>
-                                        </table>  
+                                        </table> 
+
+                                                   </div>
+
+                                                    </div>
+                                                </div>
+                                              
+                                            
+                                             
                                                 
                                             </fieldset>
                                                    

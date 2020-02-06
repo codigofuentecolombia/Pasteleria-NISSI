@@ -263,11 +263,11 @@
                                 <select id="Unidad_medida" name="categoria" class="form-control" required>
                                     <option value="none" selected="" disabled="">Unidad de medida</option>
                                         <?php   
-                                            $categorias="SELECT * FROM categorias WHERE reg_eli=0";
+                                            $categorias="SELECT * FROM unidades_medida WHERE reg_eli=0";
                                             $resultado2=$mysqli->query($categorias);
-                                            while ($listadocategorias=$resultado2->fetch_assoc()) {
+                                            while ($listadounidades=$resultado2->fetch_assoc()) {
                                         ?>                            
-                                    <option value="<?php echo ($listadocategorias["id_categoria"]);?>"><?php echo ($listadocategorias["nombre_categoria"]);?></option>
+                                    <option value="<?php echo ($listadounidades["id_unidad"]);?>"><?php echo ($listadounidades["abrev_unidad"]);?></option>
                                         <?php } ?>
                                 </select>
                             </div> 
